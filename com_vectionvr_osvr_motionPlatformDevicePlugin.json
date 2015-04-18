@@ -1,0 +1,56 @@
+{
+  "deviceVendor": "Bnome",
+  "deviceName": "Motion platform - plugin definition",
+  "author": "Nicolas Chalon <n.chalon@bnome.be>",
+  "version": 1,
+  "lastModified": "2015-04-08T00:00:00.000Z",
+  "interfaces":{
+    "tracker":{
+      "count":1,
+      "position":false,
+      "orientation":true
+    },
+    "analog": {
+      "count": 6,
+      "traits": [{
+          "min": -1,
+          "rest":0,
+          "max": 1
+        },{
+          "min": -1,
+          "rest":0,
+          "max": 1
+        },{
+          "min": -1,
+          "rest":0,
+          "max": 1
+        },{
+          "min": -1,
+          "rest":0,
+          "max": 1
+        },{
+          "min": -1,
+          "rest":0,
+          "max": 1
+        },{
+          "min": -1,
+          "rest":0,
+          "max": 1
+        }
+      ]
+    }
+  },
+  "semantics": {
+    "current_orientation" : "tracker/0",
+    "target_displacement": {
+      "x": "analog/0",
+      "y": "analog/1",
+      "z": "analog/2"
+    },
+    "target_angle":{
+      "x": "analog/3",
+      "y": "analog/4",
+      "z": "analog/5"
+    }
+  }
+}
